@@ -112,9 +112,11 @@
 
 #footer{
     border-top: 3px solid rgb(45, 45, 45);
-    background: rgb(8, 8, 8);;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: rgb(8, 8, 8);
+}
+
+.footer{
+    background: rgb(8, 8, 8);
 }
     
     /* ICONOS DE EMAIL, TELEFONO Y UBICACION UBICADO EN LA PARTE CENTRAL DEL FOOTER */
@@ -242,10 +244,19 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 900px){
-    .contenedor-redes{
-        margin-right: 10px;
+@media (min-width: 768px) and (max-width: 1180px){
+    #logoyfrasefooter{
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
+    #iconosfooter{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .redes-footer{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        }
 }
 
 @media (min-width: 501px) and (max-width: 772px){
@@ -263,8 +274,6 @@
 @media  (max-width: 479x){
     .lista-footer{
         padding-right: 30px;
-        
-        
     }
 
 }
@@ -472,18 +481,14 @@ border: solid 3px black;
 
     }
         ul{
-            margin-right: 35px;
-
                 li{
                     display: inline-block;
                     text-decoration: none;
                     list-style: none;
                     padding: 4px;
                     a{
-                        
                         display: flex;
                         flex-direction: row;
-
                     }
                 }
             }
