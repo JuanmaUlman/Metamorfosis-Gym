@@ -29,7 +29,6 @@
     background-image: url(../images-proyecto/imagendefondopesarusareducida.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
     display: grid;
     justify-content: center;
     align-content: space-between; }
@@ -153,16 +152,45 @@
       background-image: url(../images-proyecto/fondorojodesplegable-redimensionado.jpg);
       color: #fff; } }
 
-@media (min-width: 768px) and (max-width: 1180px) {
+/* @media (min-width: 768px) and (max-width: 1180px){
+    #logoyfrasefooter{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #iconosfooter{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .redes-footer{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        }
+} */
+@media (min-width: 576px) and (max-width: 768px) {
+  .logo-header {
+    background-color: rgba(210, 210, 210, 0.276);
+    width: 100%; }
+  .desplegable li a {
+    text-transform: uppercase;
+    font-size: 10px; }
+    .desplegable li a:hover {
+      background-image: url(../images-proyecto/fondorojodesplegable-redimensionado.jpg);
+      color: #fff; }
+  #iconosfooter li p a {
+    font-size: 8px; }
+  #iconosfooter li img {
+    width: 30px; }
   #logoyfrasefooter {
-    padding-top: 20px;
-    padding-bottom: 20px; }
-  #iconosfooter {
-    padding-top: 20px;
-    padding-bottom: 20px; }
+    font-size: 9px;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    #logoyfrasefooter img {
+      width: 70px; }
   .redes-footer {
-    padding-top: 20px;
-    padding-bottom: 20px; } }
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .redes-footer p {
+      font-size: 14px; } }
 
 @media (min-width: 501px) and (max-width: 772px) {
   .titulo {
@@ -270,8 +298,7 @@
     width: 100%;
     background: #0c0c0c;
     background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden; }
+    background-repeat: no-repeat; }
   /* ICONOS DE EMAIL, TELEFONO Y UBICACION UBICADO EN LA PARTE CENTRAL DEL FOOTER */
   #iconosfooter {
     display: flex;
@@ -347,6 +374,12 @@
     color: white;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 20px; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .texto-menu {
+    color: white;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 10px; } }
 
 /* DISEÑO DESKTOP */
 @media (min-width: 480px) {
@@ -736,7 +769,8 @@
       margin-bottom: 4px;
       background: rgba(68, 68, 68, 0.842);
       font-size: 15px;
-      font-family: fantasy; }
+      font-family: fantasy;
+      color: #fff; }
     .formulario form p textarea {
       width: 400px;
       border: solid 2px #ba0303;
@@ -744,7 +778,8 @@
       font-size: 15px;
       font-family: fantasy;
       background: rgba(68, 68, 68, 0.842);
-      border-radius: 10px; }
+      border-radius: 10px;
+      color: #fff; }
   #enviar {
     display: grid;
     justify-content: flex-end;
